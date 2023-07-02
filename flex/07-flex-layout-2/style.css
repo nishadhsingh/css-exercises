@@ -1,29 +1,94 @@
+
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex:1 1 auto;
+  flex-direction: column;
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  display: flex;
+  align-items: center;
+  font-weight: 1000;
+  padding-left :10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-basis: 250px;
+  padding:5px;
+  
+  
+}
+ul
+{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  gap:10px;
+  align-items: flex-start;
+  margin-right: auto;
+  list-style: none;
+  padding-left: 0;
+}
+
+a
+{
+  text-decoration: none;
+  color: #eee;
+ 
+  
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  flex-basis: 250px;
+  flex-grow: 0;
+  flex-shrink: 1;  
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+  text-align: justify;
+  width: 115px;
+  height: 115px;
+  
+}
+.center
+{
+  margin-bottom: auto;
+  display: flex;
+  flex: 1;
+}
+
+.space
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex: 1;
+  align-items: start;
+  gap: 20px;
+  padding: 20px;
 }
