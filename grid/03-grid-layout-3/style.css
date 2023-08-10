@@ -89,3 +89,81 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+.container
+{
+  display: grid;
+  gap:15px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: clamp(80px,80px,120px) clamp(80px,80px,120px) 16fr clamp(80px,80px,120px);
+}
+.header
+{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+  
+}
+.logo
+{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: -1;
+}
+
+.sidebar
+{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  display: grid;
+  gap: 20px;
+  grid-template-rows: repeat(4,1fr);
+  grid-template-columns: 1fr;
+}
+
+.footer
+{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 4;
+  grid-row-end: -1;
+}
+
+.nav
+{
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  
+}
+.nav ul
+{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3,1fr);
+}
+.article
+{
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: grid;
+  gap:15px;
+  grid-template-columns: repeat(4,minmax(250px,1fr));
+  grid-template-rows: repeat(3,minmax(200px,1fr));
+}
+.menu ul
+{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4,1fr);
+}
